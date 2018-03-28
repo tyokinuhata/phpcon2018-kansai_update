@@ -15,28 +15,29 @@
   </div>
 </template>
 
-<script>
-</script>
-
-<style lang="scss" scoped="">
+<style lang="scss" scoped>
   @import "~assets/scss/library/_variable.scss";
   @import "~assets/scss/library/_mixin.scss";
+
   .home-Description {
     padding: 130px 0 70px 0;
     width: auto;
     background-color: $clr_base;
-  &_Title {
-   @include secTitle;
-   }
-  &_Intro {
-     margin-bottom: 50px;
-   }
+
+    &_Title {
+      @include secTitle;
+    }
+
+    &_Intro {
+       margin-bottom: 50px;
+    }
   }
   .home-Past {
     margin-bottom: 60px;
     padding: 20px 0;
     border-radius: 100px;
     background: $clr_baseDark;
+
     &_List {
       a {
         margin-left: 18px;
@@ -49,17 +50,21 @@
     padding: 40px 100px 70px;
     border-radius: 80px;
     background: $clr_accent;
+
     &_Title {
       @include secTitle($clr_base);
     }
+
     &_Description {
       color: $clr_base;
       margin-bottom: 50px;
     }
+
     &_Speaker {
       @include button(#fff,$clr_base);
       margin-right: 20px;
     }
+
     &_Sponsor {
       @include button(#fff,$clr_base);
     }

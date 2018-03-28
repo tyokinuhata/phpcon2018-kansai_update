@@ -27,9 +27,7 @@
     &_Title {
       @include secTitle();
     }
-    &_Description {
 
-    }
     .home-Share_List {
       margin-top: 30px;
       color: $clr_base;
@@ -43,5 +41,4 @@
       }
     }
   }
-
 </style>

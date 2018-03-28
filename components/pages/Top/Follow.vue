@@ -17,9 +17,6 @@
   </div>
 </template>
 
-<script>
-</script>
-
 <style lang="scss" scoped>
   @import "~assets/scss/library/_variable.scss";
   @import "~assets/scss/library/_mixin.scss";

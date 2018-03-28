@@ -15,9 +15,6 @@
   </div>
 </template>
 
-<script>
-</script>
-
 <style lang="scss" scoped>
   @import "~assets/scss/library/_variable.scss";
   @import "~assets/scss/library/_mixin.scss";
@@ -26,9 +23,11 @@
     width: auto;
     background-color: $clr_main;
     position: relative;
+
     .st-Container {
       height: 750px;
       position: relative;
+
       .home-Title_Cloud1 {
         margin-left: 100px;
         width: 200px;
@@ -40,6 +39,7 @@
         top: 450px;
         left: 0;
       }
+
       .home-Title_Cloud2 {
         margin-right: 130px;
         width: 180px;
@@ -51,6 +51,7 @@
         top: 150px;
         right: 0;
       }
+
       .home-Title_Logo {
         z-index: 100;
         margin-left: auto;
@@ -66,6 +67,7 @@
         bottom: 0;
       }
     }
+
     .home-Title_Cloud3 {
       z-index: 1;
       width: 399px;
@@ -77,6 +79,7 @@
       top: 210px;
       left: 0;
     }
+
     .home-Title_Cloud4 {
       z-index: 1;
       width: 399px;
@@ -88,6 +91,7 @@
       top: 180px;
       right: 0;
     }
+
     .home-Title_Wave {
       z-index: 2;
       width: 100%;
@@ -98,6 +102,7 @@
       position: absolute;
       top: 660px;
     }
+
     .home-Title_Elephants {
       z-index: 3;
       position: absolute;
@@ -106,6 +111,7 @@
       background: right;
       text-align: right;
     }
+
     .home-Title_Elephant {
       display: inline-block;
       width: 112px;
@@ -114,6 +120,7 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+
     .home-Title_Attention {
       padding: 1rem;
       border-radius: 1rem;
@@ -125,6 +132,7 @@
       background: $clr_accent;
       position: relative;
       top: -130px;
+
       &::after {
          display: inline-block;
          content: "";
