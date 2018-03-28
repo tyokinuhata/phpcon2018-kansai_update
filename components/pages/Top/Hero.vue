@@ -35,6 +35,7 @@
         height: 132px;
         background-image: url("/images/aerialCloud.png");
         background-repeat: no-repeat;
+        background-size: contain;
         position: absolute;
         top: 450px;
         left: 0;
@@ -45,6 +46,7 @@
         height: 122px;
         background-image: url("/images/airplane.png");
         background-repeat: no-repeat;
+        background-size: contain;
         position: absolute;
         top: 150px;
         right: 0;
@@ -70,6 +72,7 @@
       height: 555px;
       background-image: url("/images/cloud_left.png");
       background-repeat: no-repeat;
+      background-size: contain;
       position: absolute;
       top: 210px;
       left: 0;
@@ -80,6 +83,7 @@
       height: 555px;
       background-image: url("/images/cloud_right.png");
       background-repeat: no-repeat;
+      background-size: contain;
       position: absolute;
       top: 180px;
       right: 0;
@@ -90,6 +94,7 @@
       height: 217px;
       background-image: url("/images/ocean.png");
       background-repeat: repeat-x;
+      background-size: contain;
       position: absolute;
       top: 660px;
     }
@@ -107,6 +112,7 @@
       height: 98px;
       background-image: url("/images/elephant.png");
       background-repeat: no-repeat;
+      background-size: contain;
     }
     .home-Title_Attention {
       padding: 1rem;
