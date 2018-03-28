@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <div>
     <sec-hero></sec-hero>
     <sec-about></sec-about>
     <sec-time-table></sec-time-table>
@@ -8,7 +8,7 @@
     <sec-share></sec-share>
     <sec-follow></sec-follow>
     <p-footer></p-footer>
-  </section>
+  </div>
 </template>
 
 <script>
