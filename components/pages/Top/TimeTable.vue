@@ -5,7 +5,7 @@
       <p class="home-TimeTable_Description">初心者から上級者まで楽しめるセッションが目白押し！これから始めようと思っていたフレームワークや、気になっていた技術についての情報が得られるかも！？</p>
       <div class="home-TimeTable_Link">
         <a href="https://twitter.com/phpcon_kansai" target="_blank" class="home-TimeTable_Anchor">
-          <i class="far fa-calendar-check"></i>
+          <i class="far fa-calendar-check" aria-hidden="true"></i>
           <span>&nbsp;タイムテーブルを確認</span>
         </a>
       </div>
@@ -14,4 +14,25 @@
 </template>
 
 <style lang="scss" scoped>
+  @import "~assets/scss/library/_variable.scss";
+  @import "~assets/scss/library/_mixin.scss";
+
+  .home-TimeTable {
+    padding: 130px 0 70px 0;
+    width: auto;
+    background: $clr_baseWhite;
+
+    &_Title {
+      @include secTitle;
+      color: $clr_base;
+    }
+
+    &_Description {
+      color: $clr_base;
+    }
+
+    &_Anchor {
+      @include button();
+    }
+  }
 </style>

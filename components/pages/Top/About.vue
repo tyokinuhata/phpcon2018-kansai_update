@@ -9,7 +9,11 @@
       </div>
       <div class="home-Wanted" id="home-Wanted">
         <h2 class="home-Wanted_Title">Wanted! Sponsor</h2>
-        <p class="home-Wanted_Description">ご協賛頂けるスポンサー様を募集しています。<br>皆様のご応募・ご協賛をお待ちしております。</p><a class="home-Wanted_Sponsor" href="https://goo.gl/forms/6hQhy1UyF2dbLI132" target="_blank"><i class="fa fa-star fa-lg" aria-hidden="true"></i><span>&nbsp;スポンサー申込み</span></a>
+        <p class="home-Wanted_Description">ご協賛頂けるスポンサー様を募集しています。<br>皆様のご応募・ご協賛をお待ちしております。</p>
+        <a class="home-Wanted_Sponsor" href="https://goo.gl/forms/6hQhy1UyF2dbLI132" target="_blank">
+          <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+          <span>&nbsp;スポンサー申込み</span>
+        </a>
       </div>
     </div>
   </div>
