@@ -50,3 +50,9 @@
   letter-spacing: 5px;
   color: $color;
 }
+
+@mixin desktop(){
+  @media(min-width: 786px){
+    @content
+  }
+}

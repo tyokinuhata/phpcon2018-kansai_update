@@ -6,36 +6,36 @@
       <div class="home-Sponsor_Sponsor">
         <div class="home-Sponsor_Platinum">
           <h3>プラチナスポンサー</h3>
-          <div></div>
-          <div></div>
+          <div class="home-Sponsor_Large"></div>
+          <div class="home-Sponsor_Large"></div>
         </div>
         <div class="home-Sponsor_Gold">
           <h3>ゴールドスポンサー</h3>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="home-Sponsor_Medium"></div>
+          <div class="home-Sponsor_Medium"></div>
+          <div class="home-Sponsor_Medium"></div>
+          <div class="home-Sponsor_Medium"></div>
+          <div class="home-Sponsor_Medium"></div>
+          <div class="home-Sponsor_Medium"></div>
+          <div class="home-Sponsor_Medium"></div>
+          <div class="home-Sponsor_Medium"></div>
         </div>
         <div class="home-Sponsor_Silver">
           <h3>シルバースポンサー</h3>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="home-Sponsor_Small"></div>
+          <div class="home-Sponsor_Small"></div>
+          <div class="home-Sponsor_Small"></div>
+          <div class="home-Sponsor_Small"></div>
+          <div class="home-Sponsor_Small"></div>
+          <div class="home-Sponsor_Small"></div>
+          <div class="home-Sponsor_Small"></div>
+          <div class="home-Sponsor_Small"></div>
+          <div class="home-Sponsor_Small"></div>
+          <div class="home-Sponsor_Small"></div>
         </div>
         <div class="home-Sponsor_Media">
           <h3>メディアスポンサー</h3>
-          <div></div>
+          <div class="home-Sponsor_Small"></div>
         </div>
       </div>
     </div>
@@ -47,12 +47,67 @@
   @import "~assets/scss/library/_mixin.scss";
 
   .home-Sponsor {
-    padding: 130px 0 70px 0;
+    padding: 70px 0 70px 0;
     width: auto;
     background: $clr_baseDark;
 
     &_Title {
       @include secTitle;
+    }
+
+    &_Description {
+      max-width: 770px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 0 30px 0;
+    }
+
+    &_Large {
+      display: inline-block;
+      max-width: 440px;
+      width: 100%;
+      height: 260px;
+      background: $clr_baseWhite;
+
+      @include desktop() {
+        &:nth-child(2) {
+          margin-right: 15px;
+        }
+
+        &:nth-child(3) {
+          margin-left: 15px;
+        }
+      }
+    }
+
+    &_Medium {
+      display: inline-block;
+      max-width: 210px;
+      width: 100%;
+      height: 140px;
+      background: $clr_baseWhite;
+
+      @include desktop() {
+
+        &:not(first-child) {
+          margin: 0 10px;
+        }
+      }
+    }
+
+    &_Small {
+      display: inline-block;
+      max-width: 150px;
+      width: 100%;
+      height: 100px;
+      background: $clr_baseWhite;
+
+      @include desktop() {
+
+        &:not(first-child) {
+          margin: 0 10px;
+        }
+      }
     }
   }
 </style>
