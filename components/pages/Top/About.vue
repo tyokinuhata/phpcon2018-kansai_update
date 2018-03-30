@@ -9,7 +9,7 @@
       </div>
       <div class="home-Wanted" id="home-Wanted">
         <h2 class="home-Wanted_Title">Wanted! Sponsor</h2>
-        <p class="home-Wanted_Description">ご協賛頂けるスポンサー様を募集しています。<br>皆様のご応募・ご協賛をお待ちしております。</p>
+        <p class="home-Wanted_Description">PHPerの夏がもっと熱くなるようなトークをして頂けるスピーカー様、<br>ご協賛頂けるスポンサー様を募集しています。<br>皆様のご応募・ご協賛をお待ちしております。</p>
         <a class="home-Wanted_Speaker" href="https://goo.gl/forms/6hQhy1UyF2dbLI132" target="_blank">
           <i class="fa fa-microphone" aria-hidden="true"></i>
           <span>&nbsp;スピーカー申込み</span>
