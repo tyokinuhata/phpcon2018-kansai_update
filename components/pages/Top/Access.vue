@@ -5,7 +5,7 @@
       <div class="home-Access_Map">ここにGoogle Mapsが入ります</div>
       <div class="home-Access_Description">
         <p class="home-Access_Place">グランフロント大阪&nbsp;北館&nbsp;タワーC&nbsp;8階</p>
-        <p class="home-Access_Address">〒530-0011&nbsp;大阪市北区大深町3-1<br>&nbsp;グランフロント大阪&nbsp;タワーC8階</p>
+        <p class="home-Access_Address">〒530-0011&nbsp;大阪市北区大深町3-1<br>&nbsp;グランフロント大阪&nbsp;北館&nbsp;タワーC8階</p>
         <p class="home-Access_Warn">
           <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
           <span>&nbsp;タワーCへはグランフロント北館1階からしかアクセスできません</span>
@@ -42,10 +42,15 @@
     &_Map {
       max-width: 900px;
       width: 100%;
-      height: 400px;
+      height: 250px;
       margin: 0 auto;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       background: #ccc;
+
+      @include desktop() {
+        margin-bottom: 30px;
+        height: 400px;
+      }
     }
 
     &_Description {
@@ -66,6 +71,8 @@
 
     &_Google, &_Detail {
       @include button;
+      margin-bottom: 10px;
+      width: 200px;
     }
   }
 </style>
