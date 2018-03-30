@@ -8,7 +8,7 @@
         <div class="home-Past_List"><a href="https://2017.kphpug.jp/" target="_blank">2017</a><a href="http://conference.kphpug.jp/2016/" target="_blank">2016</a><a href="http://conference.kphpug.jp/2015/" target="_blank">2015</a><a href="http://conference.kphpug.jp/2014/" target="_blank">2014</a><a href="http://conference.kphpug.jp/2013/" target="_blank">2013</a><a href="http://conference.kphpug.jp/2012/" target="_blank">2012</a></div>
       </div>
       <div class="home-Wanted" id="home-Wanted">
-        <h2 class="home-Wanted_Title">Wanted! Sponsor</h2>
+        <h2 class="home-Wanted_Title">Wanted! <br>Speaker and Sponsor</h2>
         <p class="home-Wanted_Description">PHPerの夏がもっと熱くなるようなトークをして頂けるスピーカー様、<br>ご協賛頂けるスポンサー様を募集しています。<br>皆様のご応募・ご協賛をお待ちしております。</p>
         <a class="home-Wanted_Speaker" href="https://goo.gl/forms/6hQhy1UyF2dbLI132" target="_blank">
           <i class="fa fa-microphone" aria-hidden="true"></i>
@@ -55,9 +55,13 @@
     }
   }
   .home-Wanted {
-    padding: 40px 100px 70px;
+    padding: 40px 20px;
     border-radius: 80px;
     background: $clr_accent;
+
+    @include desktop() {
+      padding: 40px 100px 70px;
+    }
 
     &_Title {
       @include secTitle($clr_base);
@@ -65,16 +69,24 @@
 
     &_Description {
       color: $clr_base;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
+
+      @include desktop() {
+        margin-bottom: 50px;
+      }
     }
 
     &_Speaker {
       @include button(#fff,$clr_base);
-      margin-right: 20px;
+      margin-bottom: 10px;
+      max-width: 200px;
+      width: 100%;
     }
 
     &_Sponsor {
       @include button(#fff,$clr_base);
+      max-width: 200px;
+      width: 100%;
     }
   }
 </style>
