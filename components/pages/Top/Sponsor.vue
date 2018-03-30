@@ -42,8 +42,17 @@
   </div>
 </template>
 
-<script>
-</script>
-
 <style lang="scss" scoped>
+  @import "~assets/scss/library/_variable.scss";
+  @import "~assets/scss/library/_mixin.scss";
+
+  .home-Sponsor {
+    padding: 130px 0 70px 0;
+    width: auto;
+    background: $clr_baseDark;
+
+    &_Title {
+      @include secTitle;
+    }
+  }
 </style>
