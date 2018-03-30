@@ -2,7 +2,7 @@
   <div class="home-Follow">
     <div class="st-Container">
       <h2 class="home-Follow_Title">Follow SNS</h2>
-      <p>PHPカンファレンス関西のSNSアカウントをフォローして<br/>最新情報チェック！</p>
+      <p class="home-Follow_Call">PHPカンファレンス関西のSNSアカウントをフォローして最新情報チェック！</p>
       <div class="home-Follow_SNS">
         <a href="https://twitter.com/phpcon_kansai" target="_blank" class="home-Follow_Twitter">
           <i aria-hidden="true" class="fa fa-twitter fa-lg"></i>
@@ -29,6 +29,17 @@
 
     &_Title {
       @include secTitle($clr_base);
+    }
+
+    &_Call {
+      max-width: 239px;
+      width: 100%;
+      margin: 0 auto;
+
+      @include desktop() {
+        max-width: 450px;
+        width: 100%;
+      }
     }
 
     &_SNS {
