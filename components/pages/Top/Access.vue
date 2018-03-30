@@ -16,8 +16,6 @@
           <i class="far fa-calendar-check"></i>
           <span>&nbsp;Googleマップを開く</span>
         </a>
-      </div>
-      <div class="home-Access_Link">
         <a href="https://twitter.com/phpcon_kansai" target="_blank" class="home-Access_Detail">
           <i class="far fa-calendar-check"></i>
           <span>&nbsp;タワーC&nbsp;アクセス詳細</span>
@@ -27,8 +25,21 @@
   </div>
 </template>
 
-<script>
-</script>
-
 <style lang="scss" scoped>
+  @import "~assets/scss/library/_variable.scss";
+  @import "~assets/scss/library/_mixin.scss";
+
+  .home-Access {
+    padding: 130px 0 70px 0;
+    width: auto;
+    background-color: #58C0AE;
+
+    &_Title {
+      @include secTitle;
+    }
+
+    &_Google, &_Detail {
+      @include button;
+    }
+  }
 </style>
