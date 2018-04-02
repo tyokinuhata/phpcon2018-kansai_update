@@ -46,9 +46,21 @@
       margin-top: 40px;
       .home-Follow_Twitter {
         @include button();
+        font-size: 12px;
+        padding: 15px 10px;
+        @include desktop {
+          font-size: 17px;
+          padding: 15px 30px;
+        }
       }
       .home-Follow_Facebook {
         @include button();
+        font-size: 12px;
+        padding: 15px 10px;
+        @include desktop {
+          font-size: 17px;
+          padding: 15px 30px;
+        }
       }
     }
   }

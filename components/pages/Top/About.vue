@@ -28,6 +28,7 @@
         </a>
       </div>
     </div>
+    <div class="home-Description_Wave"></div>
   </div>
 </template>
 
@@ -50,6 +51,17 @@
       @include desktop() {
         margin-bottom: 50px;
       }
+    }
+
+    &_Wave {
+      width: 100%;
+      height: 20px;
+      background-image: url("/images/wavyLine-dark.png");
+      background-repeat: repeat-x;
+      background-size: contain;
+      position: relative;
+      top: 90px;
+      transform: scaleY(-1);
     }
   }
   .home-Past {

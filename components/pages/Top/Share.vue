@@ -34,10 +34,26 @@
 
       .home-Share_Twitter {
         @include buttonSns;
+        a {
+          padding: 15px 15px;
+          font-size: 12px;
+          @include desktop {
+            padding: 15px 45px;
+            font-size: 16px;
+          }
+        }
       }
 
       .home-Share_Facebook {
         @include buttonSns;
+        a {
+          padding: 15px 15px;
+          font-size: 12px;
+          @include desktop {
+            padding: 15px 45px;
+            font-size: 16px;
+          }
+        }
       }
     }
   }
