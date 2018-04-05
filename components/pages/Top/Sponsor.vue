@@ -1,5 +1,6 @@
 <template>
   <div class="home-Sponsor">
+    <div class="home-Sponsor_Wave"></div>
     <div class="st-Container">
       <h2 class="home-Sponsor_Title">SPONSOR</h2>
       <p class="home-Sponsor_Description">初心者から上級者まで楽しめるセッションが目白押し！これから始めようと思っていたフレームワークや、気になっていた技術についての情報が得られるかも！？</p>
@@ -51,6 +52,16 @@
     width: auto;
     background: $clr_baseDark;
 
+    &_Wave {
+      width: 100%;
+      height: 20px;
+      background-image: url("/images/wavyLine-dark.png");
+      background-repeat: repeat-x;
+      background-size: contain;
+      position: relative;
+      top: -90px;
+    }
+
     &_Title {
       @include secTitle;
     }
@@ -64,49 +75,46 @@
 
     &_Large {
       display: inline-block;
-      max-width: 440px;
+      max-width: 330px;
       width: 100%;
-      height: 260px;
+      height: 230px;
       background: $clr_baseWhite;
+      margin: 0 5px 30px 5px;
 
       @include desktop() {
-        &:nth-child(2) {
-          margin-right: 15px;
-        }
-
-        &:nth-child(3) {
-          margin-left: 15px;
-        }
+        max-width: 440px;
+        height: 260px;
+        margin: 0 15px 40px 15px;
       }
     }
 
     &_Medium {
       display: inline-block;
-      max-width: 210px;
+      max-width: 150px;
       width: 100%;
-      height: 140px;
+      height: 110px;
       background: $clr_baseWhite;
+      margin: 0 5px 5px 5px;
 
       @include desktop() {
-
-        &:not(first-child) {
-          margin: 0 10px;
-        }
+        max-width: 215px;
+        height: 140px;
+        margin: 0 10px 10px 10px;
       }
     }
 
     &_Small {
       display: inline-block;
-      max-width: 150px;
+      max-width: 100px;
       width: 100%;
-      height: 100px;
+      height: 75px;
       background: $clr_baseWhite;
+      margin: 0 5px 5px 5px;
 
       @include desktop() {
-
-        &:not(first-child) {
-          margin: 0 10px;
-        }
+        max-width: 150px;
+        height: 120px;
+        margin: 0 10px 10px 10px;
       }
     }
   }

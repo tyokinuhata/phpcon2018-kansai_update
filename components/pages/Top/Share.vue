@@ -1,5 +1,6 @@
 <template>
   <div class="home-Share">
+    <div class="home-Share_Wave"></div>
     <div class="st-Container">
       <h2 class="home-Share_Title">Share on SNS</h2>
       <p class="home-Share_Description">ワクワクをシェアしよう！<br>イベントに関する要望等もお待ちしております。</p>
@@ -24,6 +25,16 @@
     width: auto;
     background-color: #00C5AC;
 
+    &_Wave {
+      width: 100%;
+      height: 20px;
+      background-image: url("/images/wavyLine-keyColor.png");
+      background-repeat: repeat-x;
+      background-size: contain;
+      position: relative;
+      top: -90px;
+    }
+
     &_Title {
       @include secTitle();
     }
@@ -37,7 +48,7 @@
         a {
           padding: 15px 15px;
           font-size: 12px;
-          @include desktop {
+          @include desktop() {
             padding: 15px 45px;
             font-size: 16px;
           }
@@ -49,7 +60,7 @@
         a {
           padding: 15px 15px;
           font-size: 12px;
-          @include desktop {
+          @include desktop() {
             padding: 15px 45px;
             font-size: 16px;
           }

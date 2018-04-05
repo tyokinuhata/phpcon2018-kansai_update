@@ -37,5 +37,8 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/font-awesome',
-  ]
+  ],
+  plugins: [
+      { src: '~/plugins/vue-googlemaps.js', ssr: false },
+  ],
 }

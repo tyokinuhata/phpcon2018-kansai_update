@@ -28,7 +28,6 @@
         </a>
       </div>
     </div>
-    <div class="home-Description_Wave"></div>
   </div>
 </template>
 
@@ -37,7 +36,7 @@
   @import "~assets/scss/library/_mixin.scss";
 
   .home-Description {
-    padding: 170px 0 70px 0;
+    padding: 20% 0 70px 0;
     width: auto;
     background-color: $clr_base;
 
@@ -51,17 +50,6 @@
       @include desktop() {
         margin-bottom: 50px;
       }
-    }
-
-    &_Wave {
-      width: 100%;
-      height: 20px;
-      background-image: url("/images/wavyLine-dark.png");
-      background-repeat: repeat-x;
-      background-size: contain;
-      position: relative;
-      top: 90px;
-      transform: scaleY(-1);
     }
   }
   .home-Past {
@@ -108,15 +96,26 @@
 
     &_Speaker {
       @include button(#fff,$clr_base);
-      margin-bottom: 10px;
+      margin: 0 5px 10px 5px;
       max-width: 200px;
       width: 100%;
+      padding: 15px 15px;
+      @include desktop() {
+        margin: 0 0 10px 5px;
+        padding: 15px 30px;
+      }
     }
 
     &_Sponsor {
       @include button(#fff,$clr_base);
+      margin: 0 5px 10px 5px;
       max-width: 200px;
       width: 100%;
+      padding: 15px 15px;
+      @include desktop() {
+        margin: 0 0 10px 5px;
+        padding: 15px 30px;
+      }
     }
   }
 </style>

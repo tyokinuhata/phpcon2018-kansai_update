@@ -1,5 +1,6 @@
 <template>
   <div class="home-TimeTable">
+    <div class="home-TimeTable_Wave"></div>
     <div class="st-Container">
       <h2 class="home-TimeTable_Title">TIME TABLE</h2>
       <p class="home-TimeTable_Description">初心者から上級者まで楽しめるセッションが目白押し！これから始めようと思っていたフレームワークや、気になっていた技術についての情報が得られるかも！？</p>
@@ -22,6 +23,16 @@
     width: auto;
     background: $clr_baseWhite;
 
+    &_Wave {
+      width: 100%;
+      height: 20px;
+      background-image: url("/images/wavyLine-white.png");
+      background-repeat: repeat-x;
+      background-size: contain;
+      position: relative;
+      top: -90px;
+    }
+
     &_Title {
       @include secTitle;
       color: $clr_base;
@@ -37,6 +48,7 @@
 
     &_Anchor {
       @include button();
+      margin: 0 0 0 0;
     }
   }
 </style>

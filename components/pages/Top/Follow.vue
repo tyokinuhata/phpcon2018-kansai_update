@@ -1,5 +1,6 @@
 <template>
   <div class="home-Follow">
+    <div class="home-Follow_Wave"></div>
     <div class="st-Container">
       <h2 class="home-Follow_Title">Follow SNS</h2>
       <p class="home-Follow_Call">PHPカンファレンス関西のSNSアカウントをフォローして最新情報チェック！</p>
@@ -27,6 +28,16 @@
     background-color: #fff;
     padding: 70px 0;
 
+    &_Wave {
+      width: 100%;
+      height: 20px;
+      background-image: url("/images/wavyLine-white.png");
+      background-repeat: repeat-x;
+      background-size: contain;
+      position: relative;
+      top: -90px;
+    }
+
     &_Title {
       @include secTitle($clr_base);
     }
@@ -48,7 +59,7 @@
         @include button();
         font-size: 12px;
         padding: 15px 10px;
-        @include desktop {
+        @include desktop() {
           font-size: 17px;
           padding: 15px 30px;
         }
@@ -57,7 +68,7 @@
         @include button();
         font-size: 12px;
         padding: 15px 10px;
-        @include desktop {
+        @include desktop() {
           font-size: 17px;
           padding: 15px 30px;
         }

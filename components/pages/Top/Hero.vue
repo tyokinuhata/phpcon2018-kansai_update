@@ -32,7 +32,7 @@
       position: relative;
       padding: 0 50px;
       height: calc(570px + 25vw);
-      @include desktop {
+      @include desktop() {
         max-width: 768px;
         height: calc(450px + 30vw);
         padding: 0;
@@ -50,7 +50,7 @@
         position: absolute;
         top: 280px;
         left: -100px;
-        @include desktop {
+        @include desktop() {
           width: 200px;
           height: 132px;
           top: 400px;
@@ -70,7 +70,7 @@
         position: absolute;
         top: 70px;
         right: -120px;
-        @include desktop {
+        @include desktop() {
           width: 180px;
           height: 122px;
           top: 100px;
@@ -92,7 +92,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        @include desktop {
+        @include desktop() {
           width: 335px;
           height: 392px;
         }
@@ -106,21 +106,21 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 5;
-      @include desktop {
+      @include desktop() {
         top: 480px;
       }
     }
 
     .home-Title_SalesCopy {
       font-size: 16px;
-      @include desktop {
+      @include desktop() {
         font-size: 21px;
       }
     }
 
     .home-Title_Text {
       font-size: 18px;
-      @include desktop {
+      @include desktop() {
         font-size: 25px;
       }
     }
@@ -137,7 +137,7 @@
       position: absolute;
       top: 515px;
       left: 0;
-      @include desktop {
+      @include desktop() {
         max-width: 480px;
         width: 30vw;
         height: 555px;
@@ -157,7 +157,7 @@
       position: absolute;
       top: 520px;
       right: 0;
-      @include desktop {
+      @include desktop() {
         max-width: 480px;
         width: 30vw;
         height: 555px;
@@ -175,7 +175,7 @@
       position: absolute;
       top: calc(530px + 25vw);
       max-height: 217px;
-      @include desktop {
+      @include desktop() {
         top: calc(390px + 30vw);
       }
     }
@@ -187,7 +187,7 @@
       width: 100%;
       left: 50%;
       transform: translateX(-50%);
-      @include desktop {
+      @include desktop() {
         top: calc(390px + 30vw);
       }
     }
@@ -201,7 +201,7 @@
       position: relative;
       top: -30px;
       left: 55%;
-      @include desktop {
+      @include desktop() {
         width: 112px;
         height: 98px;
         left: 53%;
@@ -219,8 +219,8 @@
       background: $clr_accent;
       position: relative;
       top: -60px;
-      @include desktop {
-        top: -80px;
+      @include desktop() {
+        top: -60px;
         font-size: 18px;
       }
 
@@ -236,7 +236,7 @@
         top: 38px;
         left: 50%;
         transform: translateX(-50%);
-        @include desktop {
+        @include desktop() {
           top: 42px;
         }
        }
