@@ -1,4 +1,4 @@
-# my-vue-app
+# phpcon2018-kansai
 
 > Nuxt.js project
 
